@@ -1,122 +1,118 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Prodipta Joty Dakua's GitHub Pages profile - projects, skills, and contact links.">
-  <title>Prodipta Joty Dakua | Portfolio</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-  <div class="bg-orb bg-orb-a"></div>
-  <div class="bg-orb bg-orb-b"></div>
-  <div class="noise"></div>
-
-  <header class="topbar">
-    <a class="brand" href="#home">PJD</a>
-    <nav class="nav" aria-label="Primary">
-      <a href="#about">About</a>
-      <a href="#work">Work</a>
-      <a href="#skills">Skills</a>
-      <a href="#connect">Connect</a>
-    </nav>
-  </header>
-
-  <main id="home" class="shell">
-    <section class="hero reveal">
-      <div class="hero-copy">
-        <p class="eyebrow">GitHub Pages profile</p>
-        <h1>Prodipta Joty Dakua</h1>
-        <p class="lead">Computer Science student focused on practical software, mobile apps, and modern web experiences. I like building things that are clear, fast, and actually useful.</p>
-        <div class="cta-row">
-          <a class="button button-primary" href="mailto:prodiptopantho@gmail.com">Email me</a>
-          <a class="button button-secondary" href="#work">See selected work</a>
-        </div>
-      </div>
-
-      <aside class="hero-card reveal">
-        <div>
-          <span class="card-label">Currently</span>
-          <strong>Seeking internship opportunities</strong>
-        </div>
-        <div class="fact-grid">
-          <div>
-            <span>Location</span>
-            <strong>Dhaka, Bangladesh</strong>
+<!doctype html>
+<html lang="en" class="dark">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Profile — Prodipta Joty Dakua</title>
+    <meta name="description" content="Professional profile — Prodipta Joty Dakua" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      /* small helper for the decorative cover blob */
+      .cover-blob {
+        background-image: radial-gradient(circle at 10% 20%, rgba(88,208,198,0.14), transparent 8%), radial-gradient(circle at 90% 60%, rgba(246,178,91,0.12), transparent 8%);
+      }
+    </style>
+  </head>
+  <body class="antialiased text-slate-200 bg-slate-900">
+    <header class="relative">
+      <div class="h-60 sm:h-72 lg:h-80 cover-blob bg-gradient-to-br from-slate-800 via-slate-900 to-slate-800 bg-cover bg-center" style="background-image: linear-gradient(180deg, rgba(2,6,23,0.6), rgba(2,6,23,0.6)), url('https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=1600&q=60');">
+        <nav class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-full">
+          <div class="flex items-center gap-3">
+            <div class="w-12 h-12 rounded-full bg-amber-400 flex items-center justify-center font-semibold text-slate-900">PJD</div>
+            <span class="sr-only">Prodipta Joty Dakua</span>
           </div>
-          <div>
-            <span>Focus</span>
-            <strong>Web, mobile, AI/ML</strong>
+          <div class="hidden md:flex items-center gap-6 text-sm text-slate-300">
+            <a href="#about" class="hover:text-white">About</a>
+            <a href="#projects" class="hover:text-white">Projects</a>
+            <a href="#connect" class="hover:text-white">Connect</a>
           </div>
-          <div>
-            <span>Projects</span>
-            <strong>GitHub-driven builds</strong>
+        </nav>
+      </div>
+    </header>
+
+    <main class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 -mt-20">
+      <!-- Profile card overlapping the cover -->
+      <section class="relative">
+        <article class="bg-gradient-to-b from-slate-800/80 to-slate-900 border border-slate-700 rounded-2xl shadow-2xl p-6 sm:p-10 flex flex-col md:flex-row gap-6 md:gap-10 items-start">
+          <!-- Left: avatar & basic -->
+          <div class="flex-shrink-0 -mt-12 md:-mt-0">
+            <div class="w-32 h-32 sm:w-36 sm:h-36 rounded-full ring-4 ring-slate-900/80 ring-offset-2 ring-offset-slate-900 overflow-hidden bg-slate-700">
+              <img src="https://avatars.githubusercontent.com/u/000?v=4" alt="Profile photo" class="w-full h-full object-cover">
+            </div>
           </div>
-          <div>
-            <span>Style</span>
-            <strong>Practical, polished, fast</strong>
+
+          <div class="flex-1">
+            <header class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
+              <div>
+                <h1 class="text-3xl sm:text-4xl font-extrabold tracking-tight text-white">Prodipta Joty Dakua</h1>
+                <p class="mt-1 text-slate-300">Computer Science student — software, mobile, and AI/ML enthusiast</p>
+              </div>
+              <div class="flex gap-3">
+                <button class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-amber-400 text-slate-900 font-semibold shadow hover:scale-105 transform transition">Follow</button>
+                <button class="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-slate-700 text-slate-200 hover:bg-slate-800 transition">Message</button>
+              </div>
+            </header>
+
+            <p class="mt-4 text-slate-300 max-w-3xl">I build practical software and web experiences focused on clarity, performance, and usefulness. I'm currently seeking internship opportunities and enjoy turning course knowledge into maintainable products.</p>
+
+            <div class="mt-6 grid grid-cols-3 gap-4 max-w-md">
+              <div class="bg-slate-800/60 border border-slate-700 rounded-lg p-3 text-center">
+                <div class="text-2xl font-bold text-white">12</div>
+                <div class="text-xs text-slate-400">Projects</div>
+              </div>
+              <div class="bg-slate-800/60 border border-slate-700 rounded-lg p-3 text-center">
+                <div class="text-2xl font-bold text-white">1.2k</div>
+                <div class="text-xs text-slate-400">Followers</div>
+              </div>
+              <div class="bg-slate-800/60 border border-slate-700 rounded-lg p-3 text-center">
+                <div class="text-2xl font-bold text-white">+450</div>
+                <div class="text-xs text-slate-400">Contributions</div>
+              </div>
+            </div>
           </div>
+        </article>
+      </section>
+
+      <!-- Recent activity / projects -->
+      <section id="projects" class="mt-8">
+        <h2 class="text-xl font-semibold text-white">Recent Projects</h2>
+        <div class="mt-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          <article class="bg-slate-800/60 border border-slate-700 rounded-xl p-4 hover:translate-y-[-4px] transform transition">
+            <h3 class="font-semibold text-white">Project A — Todo App</h3>
+            <p class="mt-2 text-slate-300 text-sm">A small cross-platform todo app built with React Native and local-first sync.</p>
+            <div class="mt-3 text-xs text-slate-400">Tech: React Native · SQLite</div>
+          </article>
+
+          <article class="bg-slate-800/60 border border-slate-700 rounded-xl p-4 hover:translate-y-[-4px] transform transition">
+            <h3 class="font-semibold text-white">Project B — Portfolio Site</h3>
+            <p class="mt-2 text-slate-300 text-sm">This portfolio and profile site using modern, accessible UI patterns and GitHub Pages deployment.</p>
+            <div class="mt-3 text-xs text-slate-400">Tech: HTML · Tailwind · GitHub Pages</div>
+          </article>
+
+          <article class="bg-slate-800/60 border border-slate-700 rounded-xl p-4 hover:translate-y-[-4px] transform transition">
+            <h3 class="font-semibold text-white">Project C — ML Experiment</h3>
+            <p class="mt-2 text-slate-300 text-sm">Exploratory ML models and notebooks for classification tasks and feature engineering.</p>
+            <div class="mt-3 text-xs text-slate-400">Tech: Python · scikit-learn</div>
+          </article>
         </div>
-      </aside>
-    </section>
+      </section>
 
-    <section id="about" class="panel reveal">
-      <div class="section-heading">
-        <p class="eyebrow">About</p>
-        <h2>A builder who cares about shipping clean products.</h2>
-      </div>
-      <p class="section-text">I am a computer science student at BRAC University working across software engineering, data structures, cloud fundamentals, Android development, and applied machine learning. My goal is to turn course knowledge into products that feel simple for users and maintainable for teams.</p>
-    </section>
-
-    <section id="work" class="panel reveal">
-      <div class="section-heading split">
-        <div>
-          <p class="eyebrow">Selected work</p>
-          <h2>Projects with a focus on real-world utility.</h2>
+      <section id="connect" class="mt-10 mb-16">
+        <h2 class="text-lg font-semibold text-white">Connect</h2>
+        <p class="mt-2 text-slate-300">Want to collaborate or learn more? Reach out via email or view my GitHub.</p>
+        <div class="mt-4 flex gap-3">
+          <a href="#" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-indigo-600 hover:bg-indigo-500 transition font-semibold">Email</a>
+          <a href="https://github.com/ProdiptoPantho" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg border border-slate-700 hover:bg-slate-800 transition">GitHub</a>
         </div>
-        <p class="section-text compact">A snapshot of the repositories and products I’ve built or helped shape.</p>
-      </div>
-      <div id="project-grid" class="grid cards"></div>
-    </section>
+      </section>
+    </main>
 
-    <section id="skills" class="panel reveal">
-      <div class="section-heading">
-        <p class="eyebrow">Skills</p>
-        <h2>Tools and technologies I reach for.</h2>
-      </div>
-      <div id="skill-groups" class="skill-groups"></div>
-    </section>
+    <footer class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 mb-10 text-center text-slate-400">
+      <p>© <span id="year"></span> Prodipta Joty Dakua — Built with Tailwind</p>
+    </footer>
 
-    <section class="panel reveal timeline-panel">
-      <div class="section-heading">
-        <p class="eyebrow">Academic focus</p>
-        <h2>Coursework that shaped how I build.</h2>
-      </div>
-      <div id="timeline" class="timeline"></div>
-    </section>
-
-    <section id="connect" class="panel reveal connect-panel">
-      <div class="section-heading">
-        <p class="eyebrow">Connect</p>
-        <h2>Let's talk if you are hiring or collaborating.</h2>
-      </div>
-      <div class="contact-links">
-        <a href="mailto:prodiptopantho@gmail.com">prodiptopantho@gmail.com</a>
-        <a href="https://github.com/ProdiptoPantho" target="_blank" rel="noreferrer">github.com/ProdiptoPantho</a>
-        <a href="https://www.linkedin.com/in/prodipto-pantho-49146221b" target="_blank" rel="noreferrer">linkedin.com/in/prodipto-pantho-49146221b</a>
-        <a href="https://prodiptopantho.github.io/" target="_blank" rel="noreferrer">prodiptopantho.github.io</a>
-      </div>
-    </section>
-  </main>
-
-  <footer class="footer">
-    <p>Built for GitHub Pages and updated for CV use.</p>
-    <p><span id="year"></span> Prodipta Joty Dakua</p>
-  </footer>
-
-  <script src="script.js"></script>
-</body>
+    <script>
+      document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+  </body>
 </html>

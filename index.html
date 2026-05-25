@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <title>Profile — Prodipta Joty Dakua</title>
     <meta name="description" content="Professional profile — Prodipta Joty Dakua" />
+    <meta property="og:title" content="Prodipta Joty Dakua — Profile" />
+    <meta property="og:description" content="Software, mobile, and AI/ML enthusiast. Portfolio and projects." />
+    <meta property="og:image" content="https://github.com/ProdiptoPantho.png" />
+    <meta name="twitter:card" content="summary_large_image" />
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
       /* small helper for the decorative cover blob */
@@ -21,10 +25,13 @@
             <div class="w-12 h-12 rounded-full bg-amber-400 flex items-center justify-center font-semibold text-slate-900">PJD</div>
             <span class="sr-only">Prodipta Joty Dakua</span>
           </div>
-          <div class="hidden md:flex items-center gap-6 text-sm text-slate-300">
+          <div class="md:hidden">
+            <button id="navToggle" aria-controls="siteNav" aria-expanded="false" class="p-2 rounded-md bg-slate-800/40 text-slate-200 hover:bg-slate-700 transition">Menu</button>
+          </div>
+          <div id="siteNav" class="hidden md:flex items-center gap-6 text-sm text-slate-300">
             <a href="#about" class="hover:text-white">About</a>
             <a href="#projects" class="hover:text-white">Projects</a>
-            <a href="#connect" class="hover:text-white">Connect</a>
+            <a href="#connect" class="hover:text-white" rel="noopener noreferrer">Connect</a>
           </div>
         </nav>
       </div>
@@ -37,7 +44,7 @@
           <!-- Left: avatar & basic -->
           <div class="flex-shrink-0 -mt-12 md:-mt-0">
             <div class="w-32 h-32 sm:w-36 sm:h-36 rounded-full ring-4 ring-slate-900/80 ring-offset-2 ring-offset-slate-900 overflow-hidden bg-slate-700">
-              <img src="https://avatars.githubusercontent.com/u/000?v=4" alt="Profile photo" class="w-full h-full object-cover">
+              <img src="https://github.com/ProdiptoPantho.png" alt="Prodipta Joty Dakua" class="w-full h-full object-cover" width="144" height="144">
             </div>
           </div>
 
@@ -48,8 +55,8 @@
                 <p class="mt-1 text-slate-300">Computer Science student — software, mobile, and AI/ML enthusiast</p>
               </div>
               <div class="flex gap-3">
-                <button class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-amber-400 text-slate-900 font-semibold shadow hover:scale-105 transform transition">Follow</button>
-                <button class="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-slate-700 text-slate-200 hover:bg-slate-800 transition">Message</button>
+                <button aria-label="Follow Prodipta" class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-amber-400 text-slate-900 font-semibold shadow hover:scale-105 transform transition">Follow</button>
+                <a href="mailto:prodiptopantho@gmail.com" aria-label="Message Prodipta" class="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-slate-700 text-slate-200 hover:bg-slate-800 transition">Message</a>
               </div>
             </header>
 
@@ -73,24 +80,32 @@
         </article>
       </section>
 
+      <!-- About section (nav target) -->
+      <section id="about" class="mt-8">
+        <div class="bg-slate-800/60 border border-slate-700 rounded-xl p-6">
+          <h2 class="text-xl font-semibold text-white">About</h2>
+          <p class="mt-3 text-slate-300">I am a computer science student at BRAC University working across software engineering, data structures, cloud fundamentals, Android development, and applied machine learning. I focus on building products that feel simple for users and maintainable for teams.</p>
+        </div>
+      </section>
+
       <!-- Recent activity / projects -->
       <section id="projects" class="mt-8">
         <h2 class="text-xl font-semibold text-white">Recent Projects</h2>
         <div class="mt-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           <article class="bg-slate-800/60 border border-slate-700 rounded-xl p-4 hover:translate-y-[-4px] transform transition">
-            <h3 class="font-semibold text-white">Project A — Todo App</h3>
+            <h3 class="font-semibold text-white"><a href="https://github.com/ProdiptoPantho/project-a" class="hover:underline" rel="noopener noreferrer">Project A — Todo App</a></h3>
             <p class="mt-2 text-slate-300 text-sm">A small cross-platform todo app built with React Native and local-first sync.</p>
             <div class="mt-3 text-xs text-slate-400">Tech: React Native · SQLite</div>
           </article>
 
           <article class="bg-slate-800/60 border border-slate-700 rounded-xl p-4 hover:translate-y-[-4px] transform transition">
-            <h3 class="font-semibold text-white">Project B — Portfolio Site</h3>
+            <h3 class="font-semibold text-white"><a href="https://github.com/ProdiptoPantho/portfolio" class="hover:underline" rel="noopener noreferrer">Project B — Portfolio Site</a></h3>
             <p class="mt-2 text-slate-300 text-sm">This portfolio and profile site using modern, accessible UI patterns and GitHub Pages deployment.</p>
             <div class="mt-3 text-xs text-slate-400">Tech: HTML · Tailwind · GitHub Pages</div>
           </article>
 
           <article class="bg-slate-800/60 border border-slate-700 rounded-xl p-4 hover:translate-y-[-4px] transform transition">
-            <h3 class="font-semibold text-white">Project C — ML Experiment</h3>
+            <h3 class="font-semibold text-white"><a href="https://github.com/ProdiptoPantho/ml-experiments" class="hover:underline" rel="noopener noreferrer">Project C — ML Experiment</a></h3>
             <p class="mt-2 text-slate-300 text-sm">Exploratory ML models and notebooks for classification tasks and feature engineering.</p>
             <div class="mt-3 text-xs text-slate-400">Tech: Python · scikit-learn</div>
           </article>
@@ -113,6 +128,16 @@
 
     <script>
       document.getElementById('year').textContent = new Date().getFullYear();
+      // mobile nav toggle
+      const navToggle = document.getElementById('navToggle');
+      const siteNav = document.getElementById('siteNav');
+      if (navToggle && siteNav) {
+        navToggle.addEventListener('click', () => {
+          const expanded = navToggle.getAttribute('aria-expanded') === 'true';
+          navToggle.setAttribute('aria-expanded', String(!expanded));
+          siteNav.classList.toggle('hidden');
+        });
+      }
     </script>
   </body>
 </html>
